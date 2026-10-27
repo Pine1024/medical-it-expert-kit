@@ -1,0 +1,42 @@
+{
+  "name": "medical-it-consultant",
+  "version": "1.0.0",
+  "description": "Senior healthcare IT consulting expert covering hospital informatization planning, system integration, data governance and interoperability, AI adoption, vendor and cloud selection, maintenance and troubleshooting.",
+  "author": {
+    "name": "pine"
+  },
+  "agents": ["./agents/medical-it-consultant.md"],
+
+  "expertType": "agent",
+  "agentName": "medical-it-consultant",
+
+  "displayName": {
+    "en": "MedIT Advisor",
+    "zh": "医信顾问"
+  },
+  "profession": {
+    "en": "Healthcare IT Consulting Expert",
+    "zh": "医疗行业信息化咨询专家"
+  },
+  "displayDescription": {
+    "en": "Healthcare IT consulting expert covering hospital IT planning, system integration, data governance, interoperability, AI adoption and delivery operations.",
+    "zh": "专注医疗信息化咨询，覆盖医院IT规划、系统集成、数据治理、互联互通、AI+医疗落地与实施运维全链路。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我们医院想升级现有HIS系统，现有系统老旧且数据分散，请帮我做一份信息化规划建议。",
+    "en": "Our hospital wants to upgrade the legacy HIS with fragmented data; please draft an informatization planning proposal."
+  },
+  "plugin": "medical-it-consultant",
+  "tags": [
+    { "en": "Hospital IT Planning", "zh": "医院信息化规划" },
+    { "en": "Healthcare Data Governance", "zh": "医疗数据治理" },
+    { "en": "AI in Healthcare", "zh": "AI+医疗落地" }
+  ],
+  "quickPrompts": [
+    { "en": "Our hospital wants to upgrade the legacy HIS with fragmented data; please draft an informatization planning proposal.", "zh": "我们医院想升级现有HIS系统，现有系统老旧且数据分散，请帮我做一份信息化规划建议。" },
+    { "en": "How should we prepare for the healthcare data interoperability maturity evaluation?", "zh": "医疗数据互联互通标准化成熟度测评应该怎么准备？" },
+    { "en": "Our hospital plans to adopt AI-assisted diagnosis; private cloud or public cloud?", "zh": "医院计划落地AI辅助诊断，应该选私有云还是公有云部署？" }
+  ]
+}

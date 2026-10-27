@@ -1,0 +1,89 @@
+{
+  "name": "medical-it-delivery",
+  "version": "1.0.0",
+  "description": "End-to-end healthcare IT delivery expert team covering consulting, solution architecture, data governance and implementation operations for hospital informatization projects.",
+  "author": {
+    "name": "pine"
+  },
+  "agents": [
+    "./agents/medical-it-delivery-team-lead.md",
+    "./agents/medical-it-advisor.md",
+    "./agents/medical-it-architect.md",
+    "./agents/medical-it-data-expert.md",
+    "./agents/medical-it-delivery-manager.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "medical-it-delivery-team-lead",
+  "teamInfo": {
+    "leadAgent": "medical-it-delivery-team-lead",
+    "memberAgents": ["medical-it-advisor", "medical-it-architect", "medical-it-data-expert", "medical-it-delivery-manager"]
+  },
+
+  "displayName": {
+    "en": "Healthcare IT Delivery Team",
+    "zh": "医疗信息化交付团"
+  },
+  "profession": {
+    "en": "Healthcare IT Delivery Team",
+    "zh": "医疗信息化交付团"
+  },
+  "displayDescription": {
+    "en": "End-to-end healthcare IT delivery team covering planning, architecture, data governance, implementation and operations.",
+    "zh": "端到端医疗信息化交付专家团，覆盖调研规划、方案架构、数据治理、实施运维与选型评估全流程。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我们是一家三甲医院，现有HIS系统老旧、数据分散，请团队做一套端到端的信息化升级交付方案。",
+    "en": "We are a tertiary hospital with legacy HIS and fragmented data; please produce an end-to-end informatization upgrade delivery plan."
+  },
+  "plugin": "medical-it-delivery",
+  "tags": [
+    { "en": "End-to-end Delivery", "zh": "端到端交付" },
+    { "en": "Healthcare Data Governance", "zh": "医疗数据治理" },
+    { "en": "AI in Healthcare", "zh": "AI+医疗落地" }
+  ],
+  "quickPrompts": [
+    { "en": "We are a tertiary hospital with legacy HIS and fragmented data; please produce an end-to-end informatization upgrade delivery plan.", "zh": "我们是一家三甲医院，现有HIS系统老旧、数据分散，请团队做一套端到端的信息化升级交付方案。" },
+    { "en": "Compare in-house development, partnership and procurement models, and assess vendor cost-effectiveness.", "zh": "请对比自研、合作开发与采购三种建设方式，并评估主流供应商的性价比。" },
+    { "en": "Evaluate private vs public cloud deployment and maintenance models for hospital LLM adoption.", "zh": "医院要落地医疗大模型，请评估私有云与公有云部署方案及维保模式选择。" }
+  ],
+  "members": [
+    {
+      "id": "medical-it-delivery-team-lead",
+      "displayName": { "en": "Quan", "zh": "全康平" },
+      "profession": { "en": "Healthcare IT Delivery Director", "zh": "医疗信息化交付总监" },
+      "avatar": "avatars/medical-it-delivery-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "medical-it-advisor",
+      "displayName": { "en": "Shen", "zh": "沈博闻" },
+      "profession": { "en": "Healthcare IT Consulting Advisor", "zh": "医疗信息化咨询顾问" },
+      "avatar": "avatars/medical-it-advisor.png",
+      "role": "member"
+    },
+    {
+      "id": "medical-it-architect",
+      "displayName": { "en": "Liang", "zh": "梁思远" },
+      "profession": { "en": "Healthcare IT Solution Architect", "zh": "医疗信息化方案架构师" },
+      "avatar": "avatars/medical-it-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "medical-it-data-expert",
+      "displayName": { "en": "Ke", "zh": "柯源" },
+      "profession": { "en": "Healthcare Data Governance Expert", "zh": "医疗数据治理专家" },
+      "avatar": "avatars/medical-it-data-expert.png",
+      "role": "member"
+    },
+    {
+      "id": "medical-it-delivery-manager",
+      "displayName": { "en": "Shi", "zh": "施立" },
+      "profession": { "en": "Healthcare IT Implementation Manager", "zh": "医疗信息化实施经理" },
+      "avatar": "avatars/medical-it-delivery-manager.png",
+      "role": "member"
+    }
+  ]
+}

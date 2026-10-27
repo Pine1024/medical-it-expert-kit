@@ -1,0 +1,35 @@
+# 通用 + Mac + 前端 PWA
+.DS_Store
+*.log
+*.tmp
+*.bak
+*-backup*
+.env
+.env.*
+config.local.*
+*credential*
+*secret*
+*.pem
+*.key
+
+# 个人身份与凭证类（禁止入库兜底）
+*.pdf
+*身份证*
+*证书*
+*简历*
+*仲裁*
+*发票*
+*信用报告*
+*体检*
+*病历*
+private/
+docs/private/
+
+# 依赖与构建
+node_modules/
+dist/
+.cache/
+
+# 编辑器
+.vscode/
+.idea/
