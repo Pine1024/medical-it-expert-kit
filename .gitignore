@@ -25,9 +25,12 @@ config.local.*
 private/
 docs/private/
 
-# 依赖与构建
+# 依赖与构建（dist 下只放行发行包 zip）
 node_modules/
 dist/
+!dist/
+dist/*
+!dist/*.zip
 .cache/
 
 # 编辑器
