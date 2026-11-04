@@ -85,8 +85,9 @@ dist/         可直接分发的安装包（无需克隆仓库）
 
 ## 可见性
 
-当前为**私有仓库**。确认内容可公开后再转 public（Settings → Danger Zone → Change visibility）。
+当前为**私有仓库**。内容本身已完成脱敏、可对外公开，是否转 public 由维护者自行决定：
+Settings → Danger Zone → Change visibility。
 
 ## License
 
-内部使用（如需开源请先自行复核内容）
+MIT，见 [LICENSE](LICENSE)。
