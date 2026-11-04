@@ -23,6 +23,17 @@ Team 型（多角色协作团队）
 - **数据治理与测评专项**：数据标准、互联互通成熟度测评、电子病历分级、数据中台
 - **实施运维专项**：实施路线图、切换与迁移、维保模式（传统维保 vs AI FDE）、故障响应体系
 
+## 协作与交付纪律（v1.1 新增）
+
+角色能力之外，全部成员另有一套统一的协作契约，用于解决多角色协作里最常见的四类失效：
+
+- **只与主理人通信**：成员之间不直连，跨成员对齐经主理人中转。并行分支各自改口径再合并，是返工成本最高的失败模式。
+- **先落盘、再回传**：产出必须先写入文件，回传消息带绝对路径、行数、字节数。避免"写了但没交付"。
+- **数字单一源**：金额、工期、指标门槛由主理人维护台账，变更须带废止声明。同一数字出现多个版本，是大型方案最高频的错误。
+- **交付即冻结**：已交付内容不静默替换，改动由主理人裁定并广播。避免多版本并存与下游按旧值工作。
+
+主理人侧另有：派发任务书六段模板（输入 / 约束 / 交付物 / 硬要求 / 下游接口 / 已裁决事项）、事实核验规则（涉及交付物内容必须读文件，不依据摘要或记忆判断）、汇编前的数字对账要求。
+
 ## 使用示例
 
 - 我们是一家三甲医院，现有HIS系统老旧、数据分散，请团队做一套端到端的信息化升级交付方案。
@@ -38,20 +49,16 @@ Team 型（多角色协作团队）
 
 ## 安装
 
-将专家包目录放到专家目录下：
-
-```
-/Users/pine/.workbuddy/plugins/marketplaces/my-experts/plugins/medical-it-delivery/
-```
-
-然后运行注册命令使其可见：
+将专家包目录放到本机专家 marketplace 的 `plugins/` 目录下（默认 `~/.workbuddy/plugins/marketplaces/my-experts/plugins/medical-it-delivery/`），然后运行注册命令使其在专家中心可见：
 
 ```bash
-python3 scripts/register_expert.py <expert-dir>
+python3 <expert-manager-skill>/scripts/register_expert.py <expert-dir>
 ```
 
 ## 打包分享
 
 ```bash
-python3 scripts/package_expert.py <expert-dir>
+python3 <expert-manager-skill>/scripts/package_expert.py <expert-dir> [output-dir]
 ```
+
+打包产物为 zip，可直接分发给他人安装。
